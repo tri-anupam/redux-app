@@ -10,9 +10,10 @@ const Navbar = () => {
     }
   return (
     <div>
-      <nav> 
-        <div style={{display:'flex',alignItems:'space-between'}}>
+      <nav  style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}> 
             <Link to='/' className="logo">REDUX STORE</Link>
+        <div>
+
             <NavLink to='/' style={navLinkStyle} className='navLink'>Home</NavLink>
             <NavLink to='/cart' style={navLinkStyle} className='navLink'>Cart</NavLink>
             <span className="cartCount">
